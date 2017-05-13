@@ -16,8 +16,11 @@ import socket
 import SocketServer
 import time
 import threading
+import subprocess
+import Queue
 
 import helpers
+from testrunner.invokeTest import invoke
 
 
 # Shared dispatcher code
@@ -101,6 +104,11 @@ class DispatcherHandler(SocketServer.BaseRequestHandler):
                 data = "\n".join(data)
                 f.write(data)
             self.request.sendall("OK")
+        elif command == "dispatchLambda":
+            self.request.sendall("OK")
+            print "going to dispatch lambda function"
+            response = invoke()
+            print response
         else:
             self.request.sendall("Invalid command")
 
