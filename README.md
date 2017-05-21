@@ -1,5 +1,5 @@
 # SimpleCI
-This is a simplified continuous integration system. This project modify [SuperSimpleCI](https://github.com/aosabook/500lines/tree/master/ci) to a serverless system built with Amazon Lambda. 
+This is a simplified continuous integration system. This project modifies [SuperSimpleCI](https://github.com/aosabook/500lines/tree/master/ci) to a serverless system built with Amazon Lambda. 
 
 ## Files
 * repo_observer.py -- Checks the repo for changes and notifies the dispatcher
