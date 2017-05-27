@@ -8,9 +8,9 @@ This is a simplified continuous integration system. This project modifies [Super
 * helpers.py -- Holds shared code
 * update_repo.sh -- Updates the shared repo and drops a new file with the commit id if there's a change
 * run_or_fail.sh -- Helper method used in update_repo.sh and test_runner_script.sh
-* test_repository/ -- Holds some demo tests to run
+* test_repository/ -- This will be our master repository. This is where developers check in their code, and repo_observer.py check for commits, and inform dispatcher to call lambda tests.
 
 ## Quick Start
 ### 1. Setup Amazon Lambda Function
-### 2. File Setup
+### 2. Setup
 ### 3. Run the CI system
